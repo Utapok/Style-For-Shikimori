@@ -220,18 +220,6 @@ body {
 
 
 
-/* Прозрачность */
-.l-page {
-    opacity: 0.85;
-}
-
-#anime_videos_index .l-page {
-    background: rgba(0,0,0,1.0);
-    opacity: 1;
-}
-
-
-
 .p-profiles .profile-head .c-brief .avatar>img {
    border-radius: 50%;
    transition: 0.5s;
@@ -805,3 +793,22 @@ body:first-letter {
  text-decoration: none !important; 
 }
 .profile img { border-radius: 50%; }
+
+
+
+/* Цвет текста ссылки по умолчанию */
+a {
+  color: #009688;
+}
+
+/* Цвет ссылки при наведении */
+a:hover {
+  color: #27f81d;
+}
+
+/* Цвет ссылки при нажатии */
+@media only screen and (min-width: 1025px) {
+  a:active {
+    color: #ffffff;
+  }
+}
