@@ -1,0 +1,807 @@
+body {
+  background-image: none;
+}
+
+
+
+
+.p-profiles .profile-head .c-brief .avatar img {
+    animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+.l-top_menu .inner > a:first-child::after {
+  content: '';
+}
+
+.l-top_menu .inner .logo {
+  display: block;
+  position: static;
+  margin: -7px 0;
+  background-position: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.anime, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.manga {
+    opacity: 0.70; /* прозрачность , "0.21" - 21%, "1" - 100%, "0" - 0% "10" - 1000%*/
+}
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:hover, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.anime:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga:hover, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.manga:hover {
+    opacity: 10; /* прозрачность , "0.1" - 10%, "1" - 100%, "0" - 0%, "10" - 1000%*/
+}
+}
+
+
+
+/* Компактная сортировка уведомлений об эпизодах */
+.b-comments { 
+  display: inline-block; 
+} 
+.b-generated_news {
+  width: 350px; 
+  display: inline-block; 
+  margin-right: 18px; 
+  border: 0;
+}
+
+
+
+/* Аниме/Манга/Ранобэ рядом с пунктами истории */
+.history-page a:before {
+  display: inline-block;
+  vertical-align: top;
+  width: 72px;
+}
+.history-page a[href ^= "/a"]:before {
+  content: '[Аниме] ';
+  color: #34a853;
+}
+.history-page a[href ^= "/m"]:before {
+  content: '[Манга] ';
+  color: #9c27b0;
+}
+.history-page a[href ^= "/r"]:before {
+  content: '[Ранобэ] ';
+  color: #039be5;
+}
+[data-locale="en"] .history-page a[href ^= "/a"]:before {
+  content: '[Anime] ';
+}
+[data-locale="en"] .history-page a[href ^= "/m"]:before {
+  content: '[Manga] ';
+}
+[data-locale="en"] .history-page a[href ^= "/r"]:before {
+  content: '[Ranobe] ';
+}
+/* END of Аниме/Манга/Ранобэ рядом с пунктами истории */
+
+
+
+.p-anime_videos .l-page .menu-toggler {
+  display: inherit;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-anime_videos .l-page.menu-expanded .menu-slide-outer.x199 .l-content {
+    width: 100%;
+  }
+
+  .p-anime_videos .l-page.menu-expanded .player-area,
+  .p-anime_videos .l-page.menu-expanded .player-placeholder,
+  .p-anime_videos .l-page.menu-expanded iframe {
+    height: 618.25px !important;
+  }
+
+  .p-anime_videos .l-page.menu-expanded .l-menu {
+    display: none;
+  }
+
+  .p-anime_videos .l-page {
+    z-index: 9;
+  }
+
+  .p-anime_videos .l-page.menu-expanded ~ #shade {
+    display: initial;
+    opacity: 0.9;
+    z-index: 8;
+    pointer-events: none;
+  }
+
+  .p-anime_videos .l-page.menu-expanded {
+    background: rgba(20,20,20,0.2);
+  }
+}
+
+
+
+/* Полусортировка работ персон */
+/* Вывод аниме перед мангой и ранобе */
+#people_works .d-cutted_covers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#people_works .c-anime {
+  order: 0;
+}
+#people_works .c-manga {
+  order: 1;
+}
+#people_works .d-cutted_covers .c-column {
+  margin-right: 3.2%;
+}
+
+/* Дизайн ярлыков */
+#people_works .cover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 3px 6px 2px;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Раздача названий и цветов ярлыкам */
+#people_works .cover[href*="//shikimori.one/animes/"]:after {
+  content: 'Аниме';
+  background: #4682b4;
+}
+#people_works .cover[href*="//shikimori.one/mangas/"]:after {
+  content: 'Манга';
+  background: #b78bc7;
+}
+#people_works .cover[href*="//shikimori.one/ranobe/"]:after {
+  content: 'Ранобэ';
+  background: #2A6E41;
+}
+
+/* Английский */
+#people_works[data-locale="en"] .cover[href*="//shikimori.one/animes/"]:after {
+  content: 'Anime';
+}
+#people_works[data-locale="en"] .cover[href*="//shikimori.one/mangas/"]:after {
+  content: 'Manga';
+}
+#people_works[data-locale="en"] .cover[href*="//shikimori.one/ranobe/"]:after {
+  content: 'Light Novel';
+}
+
+
+
+/* Отмена работы скрипта */
+.b-catalog_entry .cover .image-cutter {
+  max-width: none !important;
+  max-height: none !important;
+}
+/* Единое регулирование размера обложек */
+.b-catalog_entry .cover .image-cutter::before {
+  content: '';
+  display: block;
+  padding-bottom: 155.5%;
+}
+/* Позиционирование изображения */
+.b-catalog_entry .cover .image-decor img {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  left: -100%;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  height: 100%;
+  min-height: 100%;
+  margin: auto;
+}
+
+
+/**/
+  .p-profiles-show .lifetime .bar,
+.p-profiles-show .lifetime .times,
+/* + активность на сайте (заголовок и столбики) */
+.p-profiles-show .profile-content .activity {
+  display: none;
+}
+
+
+
+/* Прозрачность */
+.l-page {
+    opacity: 0.85;
+}
+
+#anime_videos_index .l-page {
+    background: rgba(0,0,0,1.0);
+    opacity: 1;
+}
+
+
+
+.p-profiles .profile-head .c-brief .avatar>img {
+   border-radius: 50%;
+   transition: 0.5s;
+}
+.p-profiles .profile-head .c-brief .avatar>img:hover {
+   border-radius: 0;
+}
+
+
+
+/* Фон сайта (фиксированный, на полный экран) */
+body {
+  background: url(https://avatars.mds.yandex.net/get-pdb/963318/b8172237-f715-4421-bb1d-f1193ae180ca/s1200) center top / cover fixed;
+}
+
+
+
+
+.b-feedback{
+  display: none;
+}
+
+
+
+.p-profiles header.head .misc span {
+    display: none;
+ }
+ .p-profiles header.head .misc:after {
+    content: '';  /* Текст онлайн 10 мар. 2019 г. */
+    visibility: visible;
+    display: block;
+    color: #f1f3f4;  /* Цвет */
+ }
+
+
+
+.b-catalog_entry.completed .image-decor::after {
+  background: #e40d0d;
+}
+
+
+
+.b-tooltipped.mobile {
+     cursor: default; 
+}
+
+
+
+.l-top_menu {
+    padding: 3px;
+}
+
+
+
+.p-profiles .profile-head .c-lists-info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+.headline > a, .headline > a:hover, .headline.linkheadline > a, .midheadline > a, .midheadline > a:hover, .midheadline.linkheadline > a, .subheadline > a, .subheadline > a:hover, .subheadline.linkheadline > a, .edit-page a.cancel, .p-dashboards-show .b-forums > .b-link_button.maxi:after, .b-form .cancel, .b-shiki_editor footer .unpreview, .b-shiki_editor footer .unpreview:not(.link):hover, .b-shiki_editor footer .preview, .b-stats_bar a.title, .b-topic-preview > .editor-container .hide {
+    color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKew72j00.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKcw72j00.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfA72j00.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKcQ72j00.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+/* Редизайн кнопки свернуть/развернуть */
+.b-edit_styles .edit_style .style_css label, .b-edit_styles .new_style .style_css label {
+    background: #670e6a;
+    border-radius: 2px 2px 0 0;
+    padding: 4px 10px;
+    color: #fff;
+    margin-top: 4px; /* возможно придётся настраивать вручную, что бы добиться эффекта единного интерфейса */
+  
+}
+.b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse {
+    color: #fff;
+    background: #993e94;
+    border-radius: 2px;
+    text-transform: uppercase;
+    min-width: 5.5rem;
+    font-size: .875rem !important;
+    padding: 6px 10px;
+    font-weight: 700 !important;
+    border: none;
+}
+.b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse:hover {
+    background: #670e6a;
+}
+.b-edit_styles .edit_style .style_css .editor-collapse:hover, .b-edit_styles .edit_style .style_css .editor-expand:hover {
+    color: #fff;
+    transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
+}
+/* CSS Редактор */
+.cm-s-solarized.cm-s-light {
+    background-color: #282638;
+    color: #fff;
+    text-shadow: none;
+}
+.b-edit_styles .edit_style .style_css .CodeMirror, .b-edit_styles .new_style .style_css .CodeMirror {
+    border: none !important;
+}
+.cm-s-solarized.cm-s-light .CodeMirror-linenumber {
+    color: #858396;
+}
+.cm-searching {
+    background-color: #fafafa30;
+}
+.CodeMirror-search-field {
+    width: 400px !important;
+    background: #0009 !important;
+    color: #fff !important;
+}
+.cm-s-solarized.cm-s-light div.CodeMirror-selected {
+    background: #44424a90;
+}
+.cm-s-solarized .cm-builtin {
+  color: #FAD430;
+}
+.cm-s-solarized .cm-def {
+  color: #fcc28c;
+}
+.cm-s-solarized .cm-string {
+  color: #C3E88D;
+}
+.cm-s-solarized .cm-variable-2 {
+  color: #9d9efe;
+}
+.cm-s-solarized .cm-variable-3 {
+  color: #C792EA;
+}
+.cm-s-solarized .cm-number {
+  color: #94FCA0;
+}
+.cm-s-solarized.cm-s-light .CodeMirror-gutters {
+  background-color: #36334d;
+}
+.cm-s-solarized .cm-property {
+  color: #80CBC4;
+}
+.cm-s-solarized .cm-variable {
+  color: #89DDFF;
+}
+.cm-s-solarized .cm-tag {
+  color: #FF5370;
+}
+.cm-s-solarized .cm-atom {
+  color: #F77669;
+}
+.cm-s-solarized .cm-keyword {
+  color: #C792EA;
+}
+.cm-s-solarized .cm-comment {
+  color: #5C7E8C;
+}
+.cm-s-solarized .cm-qualifier {
+  color: #FFCB6B;
+}
+
+
+
+
+.p-profiles .profile-head .c-brief .avatar {
+  float: right;
+}
+@media (min-width: 768px) {
+  .p-profiles .profile-head .c-brief .avatar {
+    margin: 10px 0 30px 30px;
+  }
+}
+.p-profiles-show .profile-content .cc-2 > .c-left {
+  float: right;
+  padding: 0 0 0 30px;
+}
+.p-profiles-show .profile-content .cc-2:after {
+  clear: both;
+}
+
+
+
+.headline>a, .midheadline>a, .subheadline>a {
+}
+a {
+    transition: 0.2s ease;
+}
+
+
+
+/* Небольшое скругление постеров аниме/манги/персонажей/людей */
+.b-catalog_entry .image-cutter {
+  border-radius: 6px;
+}
+
+.p-profiles .about.block .b-spoiler label {
+  border: none;
+  display: inline-block !important;
+  font-weight: bold; /* толщина шрифта, можно убрать, если не нужно */
+  color: #ffffff; /* цвет текста спойлера */
+  background: #4e4c56; /* цвет фона спойлера */
+  height: 30px; 
+  width: 100%;
+  font-size: 12pt; /* размер шрифта текста на спойлере */
+  padding-top: 3px; 
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.p-profiles .about.block .b-spoiler .after:before, .about.block .b-spoiler .before:before {
+  content: '';
+}
+
+.p-profiles .about.block .b-spoiler .before {
+  width: 100%; 
+  height: 50px;
+  display: inline-block !important;
+  margin-top: -50px;
+}
+
+.cc-8-g0.align-posters .b-catalog_entry {
+    padding: 5px;
+}
+
+.p-profiles .about.block .b-spoiler label {
+ border-radius: 37px;
+}
+
+
+
+body, input, select, button, textarea {
+    font-family: 'Ubuntu';
+}
+
+
+
+.l-top_menu-v2 {
+    background: #670e6a;
+    border-bottom: 0px;
+    height: 46px;
+}
+
+.l-top_menu-v2 .menu-dropdown > span {
+    background: #670e6a;
+}
+
+
+
+.l-top_menu-v2 .menu-icon.active, .l-top_menu-v2 .menu-icon:focus, .l-top_menu-v2 .menu-dropdown.active > span, .l-top_menu-v2 .menu-dropdown > span:focus {
+    -webkit-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+    background-color: #670e6a;
+}
+
+
+
+.l-top_menu-v2 .submenu {
+    background: #670e6a;
+    border-bottom: 1px solid #670e6a;
+    border-left: 1px solid #670e6a;
+    border-right: 1px solid #670e6a;
+}
+
+
+
+.l-top_menu-v2 .menu-icon:hover, .l-top_menu-v2 .menu-dropdown:hover > span {
+    background-color: #933e94;
+}
+
+
+
+
+body {
+    font-size: 13px;
+}
+
+
+
+.l-top_menu-v2 .logo-container {
+  padding: 0 8px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.l-top_menu-v2 .logo-container::after {
+  content: attr(title);
+}
+
+.l-top_menu-v2 .logo-container .glyph {
+  margin: 0 1em 0 0;
+}
+
+.l-top_menu-v2 .logo-container .logo {
+  display: none;
+}
+
+body {
+    line-height: 2.6;
+}
+
+
+
+/* Скроллбар */
+/* Кнопки скроллбара */
+::-webkit-scrollbar-button {
+  background-image: url(''); 
+  background-repeat: no-repeat;
+  width: 0px;
+  height: 0px
+}
+
+/* Серая полосочка на фоне скролла */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+/* Цвет скролла */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  background-color: #670e6a;
+}
+
+/* Цвет зажатого скролла */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #933e94;
+  -webkit-border-radius: 5px;
+}
+
+/* Визуальный размер угла угол */
+::-webkit-scrollbar-corner {
+  background-repeat: no-repeat;
+}
+
+/* Уголки изменения размера */
+::-webkit-resizer {
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+}
+
+/* Размеры горизонтальный и вертикальный скролл */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+
+.l-top_menu-v2 .global-search .search-results .nothing_found, .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item, .l-top_menu-v2 .global-search .search-results .search-mode {
+    -webkit-transition: none;
+    border-top: none;
+}
+
+
+
+.b-tag, .b-entry-info .line .b-tag, .b-catalog_entry-tooltip .inner .line .value .tag {
+    padding: 0 8px;
+    margin: 0 4px 0 0;
+    border: 0;
+    font-size: .625rem;
+    line-height: 20px;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+  .l-top_menu-v2 .menu-dropdown > span a:hover {
+  background-color: #933e94;
+}
+}
+
+
+
+.b-catalog_entry-tooltip .inner .line .key .tag, .b-entry-info .line .b-tag, .b-tag {
+  padding: 0 8px;
+  margin: 0 4px 0 0;
+  background-color: #616161;
+  border: 0;
+  border-radius: 3px;
+  color: #EEEEEE;
+  font-size: .675rem;
+  line-height: 18px;
+}
+
+.b-catalog_entry-tooltip .inner .line .key .tag:hover, .b-entry-info .line .b-tag:hover, .b-tag:hover, .b-catalog_entry-tooltip .inner .line .key [href].tag:hover, [href].b-tag:hover {
+  padding: 0 8px;
+  margin: 0 4px 0 0;
+  background-color: #123;
+  color: #FFFFFF;
+}
+
+.b-catalog_entry-tooltip .inner .line .key .tag:active, .b-entry-info .line .b-tag:active, .b-tag:active, .b-catalog_entry-tooltip .inner .line .key [href].tag:active, [href].b-tag:active {
+  background-color: #757575;
+}
+
+
+
+.b-badge img, .b-badge .no-image {
+  border-radius: 5px;
+}
+
+
+
+.b-options-floated a, .b-options-floated .link {
+    display: none;
+}
+
+
+
+.p-profiles[data-locale="ru"] .lifetime .title > .label:before {
+    content: '';
+}
+
+
+
+.l-top_menu-v2 .menu-icon, .l-top_menu-v2 .menu-dropdown>span {
+    border-radius: 2px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(https://avatars.mds.yandex.net/get-pdb/963318/b8172237-f715-4421-bb1d-f1193ae180ca/s1200) center top / cover fixed !important;
+  }
+}
+
+
+
+.l-top_menu-v2 .global-search input {
+    background: #933e94;
+}
+
+.l-top_menu-v2 .global-search>span {
+    color: #000000;
+}
+.l-top_menu-v2.is-search-focus .global-search .search-marker {
+    color: #000000;
+}
+
+.l-top_menu-v2.is-search-focus .global-search input, .l-top_menu-v2.is-search-mobile .global-search input {
+    background-color: #ffffff;
+}
+
+.l-top_menu-v2 .global-search .search-results {
+    top: 40px;
+}
+
+
+
+.p-profiles .profile-head .c-info .c-additionals {
+    display: none;
+}
+
+
+
+.p-profiles .lifetime .title .value {
+    cursor: default;
+}
+
+
+
+.turbolinks-progress-bar {
+    background: #29ce33 !important;
+}
+
+
+
+
+.l-top_menu-v2 .global-search .hotkey-marker {
+display: none;
+}
+
+
+
+/* Убрать скобки вокруг цифр */
+.b-stats_bar .stat_names .stat_name .size::before,
+.b-stats_bar .stat_names .stat_name .size::after {
+  display: none;
+}
+
+/* Наведение на кнопку */
+.p-profiles-show .b-stats_bar.manga a.title:hover  {
+  background: #25d923;
+}
+/* Наведение на кнопку */
+.p-profiles-show .b-stats_bar.anime a.title:hover  {
+  background: #933e94;
+}
+.b-list_switchers > .switcher.selected, .editor-controls > span.selected, .p-profiles-show .b-stats_bar.manga a.title {
+    color: #fff !important;
+}
+/* Стиль кнопок манги */
+.p-profiles-show .b-stats_bar.manga a.title {
+background: #319832;
+  font-size: 100%;
+}
+/* Стиль кнопок аниме */
+.p-profiles-show .b-stats_bar.anime a.title {
+  background: #670e6a;
+    font-size: 100%;
+}
+
+
+
+body:first-letter {
+  text-transform: uppercase;
+}
+::selection {
+  color: #fff;
+  background-color: #670e6a;
+}
+:hover {
+ text-decoration: none !important; 
+}
+.profile img { border-radius: 50%; }
