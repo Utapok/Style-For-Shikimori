@@ -11626,6 +11626,7 @@ body:first-letter {
 .profile img { 
 border-radius: 50%;
 }
-.smiley {
-max-width: 50px;
+@media screen and (max-width: 1024px)
+.l-top_menu-v2.is-search-mobile .global-search {
+    background: #670e6a;
 }
