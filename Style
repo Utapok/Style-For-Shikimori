@@ -11623,4 +11623,9 @@ body:first-letter {
 :hover {
  text-decoration: none !important; 
 }
-.profile img { border-radius: 50%; }
+.profile img { 
+border-radius: 50%;
+}
+.smiley {
+max-width: 50px;
+}
