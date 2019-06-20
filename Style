@@ -1,11 +1,11 @@
-/* AUTO=sticky_menu */ .l-top_menu-v2 { position: sticky; top: 0; }
+.l-top_menu-v2 {  position: fixed;  top: 0;  right: 0;  left: 0;}.b-comments-notifier {  top: 46px !important;}
 /* SPECIAL CODE */
-/* 10797 id-509388 Oe?ieia iieioii noeey */
+/* 10797 id-509388 Широкое полотно стиля */
 .b-edit_styles > .c-column {
   width: 100%;
 }
 
-/* Oae?aai eeoiea yeaiaiou iano?iae */
+/* Убираем лишние элементы настроек */
 .page_background_color {
   display: none;
 }
@@ -115,18 +115,18 @@ text,
 
 
 
-/* IANO?IEEA OAAOIA */
-/* Oaao oaenoa nnueee ii oiie?aie? */
+/* НАСТРОЙКА ЦВЕТОВ */
+/* Цвет текста ссылки по умолчанию */
 a {
   color: #009688;
 }
 
-/* Oaao nnueee i?e iaaaaaiee */
+/* Цвет ссылки при наведении */
 a:hover {
   color: #27f81d;
 }
 
-/* Oaao nnueee i?e ia?aoee */
+/* Цвет ссылки при нажатии */
 @media only screen and (min-width: 1025px) {
   a:active {
     color: #ffffff;
@@ -835,7 +835,7 @@ header.head h2,
   color: #FFFFFF !important;
 }
 
-/* Oaao iniiaiiai oaenoa a iaeanoe i?e iaaaaaiee */
+/* Цвет основного текста в области при наведении */
 .b-clubs-menu .b-link:hover,
 .b-clubs-menu .actions li:hover,
 .b-clubs-menu .actions .upload label:hover,
@@ -1378,7 +1378,7 @@ select,
   background: #424242 !important;
 }
 
-/* Iaeanoe iaaaaaiey */
+/* Области наведения */
 .b-lang_trigger,
 .b-tag,
 .block-list li:hover,
@@ -1432,7 +1432,7 @@ select,
   background-color: #424242 !important;
 }
 
-/* Eiiiee i?e iaaaaaiee */
+/* Кнопки при наведении */
 .b-video_player .cc-player_controls .c-control:hover .icon,
 .p-animes_collection-index .pagination .link:hover,
 .p-mangas_collection-index .pagination .link:hover,
@@ -1466,7 +1466,7 @@ header.head h2 > a.back:hover {
   background-color: #424242;
 }
 
-/* OAAO A?AIEO YEAIAIOIA */
+/* ЦВЕТ ГРАНИЦ ЭЛЕМЕНТОВ */
 hr,
 .b-db_entry-note:before,
 .b-dialog:before,
@@ -1512,7 +1512,7 @@ select,
   border-color: #757575;
 }
 
-/* INIAUA OAAOA */
+/* ОСОБЫЕ ЦВЕТА */
 .b-entry-info .line .b-tag:active,
 .b-catalog_entry-tooltip .inner .line .value .tag:active {
   background-color: #757575;
@@ -1526,7 +1526,7 @@ select,
   background: #757575;
 }
 
-/* END of IANO?IEEA OAAOIA */
+/* END of НАСТРОЙКА ЦВЕТОВ */
 
 
 
@@ -1539,10 +1539,10 @@ select,
 
 /**
  * MATERIAL ICON
- * Eeiiee aie?iu ?aniieaaaouny a inaaaiyeaiaioa ::before
- * Noaiaa?oiue ?acia? eeiiie 24px, oiaiuoaiiue � 20px
+ * Иконки должны располагаться в псевдоэлементе ::before
+ * Стандартный размер иконок 24px, уменьшенный – 20px
  *
- * NOTE: Aa?ney o?eooa onoa?aea, iiaaa??eaa?ony ia ana eeiiee ec eaoaeiaa
+ * NOTE: Версия шрифта устарела, поддерживаются не все иконки из каталога
  * BUG: IE doesn't support Materail Icon's font format [.woff2]
  */
 @font-face {
@@ -1650,28 +1650,28 @@ header.head h2 a.back:hover, .buttons .editor-controls .b-tooltipped:hover, .p-d
 }
 
 /* BUGFIX */
-/* A i?aau? eiiiaioa?ey ia ioia?a?aaony caaieiaie ia no?aieoao eeoaia */
+/* В превью комментария не отображается заголовок на страницах клубов */
 .p-club_pages .new_comment .preview .b-comment .inner header,
 .p-club_pages .edit_comment .preview .b-comment .inner header {
   display: block;
 }
 
-/* Nnueee a i?aau? iiainoae ia ia?aiinyony ia iiao? no?ieo */
+/* Ссылки в превью новостей не переносятся на новую строку */
 .b-animes-menu .menu-topics-block .history-entry-tooltip .tooltip-details a {
   display: block;
 }
 
-/* Iaeneiaeuiay oe?eia yeaiaioia */
+/* Максимальная ширина элементов */
 img {
   max-width: 100%;
 }
 
-/* Oae?aai eeoiaa i?ino?ainoai iia textarea */
+/* Убираем лишнее пространство под textarea */
 textarea {
   vertical-align: top;
 }
 
-/* Oae?aai caiyoua a oaaao */
+/* Убираем запятые в тегах */
 .b-entry-info .line .b-tag span:after {
   display: none;
 }
@@ -1679,7 +1679,7 @@ textarea {
 
 
 
-/* INIIAIIE OAEE */
+/* ОСНОВНОЙ ФАЙЛ */
 header.head h1,
 header.head h2,
 input {
@@ -1790,7 +1790,7 @@ body {
   background: none;
 }
 
-/* IA OAAE?OU! Eioi?iaoey aey ono?aiaiey iaiieaaie */
+/* НЕ УДАЛЯТЬ! Информация для устранения неполадок */
 body[data-user*=":2727,"] .l-footer:before {
   content: "";
 }
@@ -1818,7 +1818,7 @@ body[data-user*=":2727,"] .l-footer:before {
   margin: 0;
 }
 
-/* AUNIOA NO?IEE */
+/* ВЫСОТА СТРОКИ */
 .cc-2a > .c-column,
 .block,
 .b-db_entry,
@@ -1838,7 +1838,7 @@ body[data-user*=":2727,"] .l-footer:before {
   line-height: inherit;
 }
 
-/* CAE?OAEAIEA */
+/* ЗАКРУГЛЕНИЕ */
 .b-comments .comments-loader,
 .b-comments .comments-hider,
 .b-comments .comments-expander,
@@ -1911,7 +1911,7 @@ header.head h2 a.back,
   }
 }
 
-/* IAUEA EEANNU */
+/* ОБЩИЕ КЛАССЫ */
 .p0,
 .m0,
 .m1,
@@ -1972,7 +1972,7 @@ hr {
   pointer-events: all;
 }
 
-/* Nienee */
+/* Списки */
 .b-list {
   margin: .5rem 0 1rem 2rem;
 }
@@ -2126,7 +2126,7 @@ hr {
   margin-bottom: .25rem;
 }
 
-/* Eiiiee oi?aaeaiey ecia?a?aieyie */
+/* Кнопки управления изображениями */
 .b-image img {
   vertical-align: top;
   border-radius: .125rem;
@@ -2141,7 +2141,7 @@ hr {
   text-align: right;
 }
 
-/* Eiiiee */
+/* Кнопки */
 .b-image .mobile-edit,
 .b-image .delete,
 .b-image.deletable .confirm,
@@ -2186,7 +2186,7 @@ hr {
   }
 }
 
-/* Iano?ieee eeiiie */
+/* Настройки иконок */
 .b-image .mobile-edit:before,
 .b-image .delete:before,
 .b-image.deletable .confirm:before,
@@ -2202,7 +2202,7 @@ hr {
   background: transparent;
 }
 
-/* Caoaiiaiea */
+/* Затемнение */
 .b-gallery .b-image .controls,
 .user_rate .b-catalog_entry:after {
   position: absolute;
@@ -2228,7 +2228,7 @@ hr {
   opacity: 1;
 }
 
-/* Aea eeiiee */
+/* Вид иконки */
 .b-image .mobile-edit:before,
 .p-user_rates-index .list-posters .user_rate .edit-user_rate:before {
   content: 'edit';
@@ -2246,7 +2246,7 @@ hr {
   content: 'close';
 }
 
-/* END of Eiiiee oi?aaeaiey ecia?a?aieyie */
+/* END of Кнопки управления изображениями */
 .b-modal > .inner {
   padding: 1rem 1.5rem;
   border-radius: .125rem;
@@ -2317,10 +2317,10 @@ header.head h2 ~ .notice {
 }
 
 .b-breadcrumbs > span:after {
-  content: '�';
+  content: '»';
 }
 
-/* Anieuaa?uay iianeacea */
+/* Всплывающая подсказка */
 .tipsy {
   padding: .875rem;
   font-size: .875rem;
@@ -2345,7 +2345,7 @@ input {
   font-size: inherit;
 }
 
-/* Eiiiee */
+/* Кнопки */
 .button,
 .b-button,
 .b-form input[type=submit],
@@ -2441,7 +2441,7 @@ input[type=submit]:hover {
   overflow: hidden;
 }
 
-/* ?aeaienu */
+/* Чекбоксы */
 /* TODO: L: border-color normal #757575 disabled #BDBDBD */
 /*       D: border-color normal #FFFFFF disabled rgba(255,255,255,.3) */
 input[type=checkbox],
@@ -2483,7 +2483,7 @@ input[type=checkbox]:checked:disabled,
   border-color: transparent;
 }
 
-/* Oi?iu */
+/* Формы */
 .b-form {
   overflow: visible;
 }
@@ -2689,7 +2689,7 @@ input[type=checkbox]:checked:disabled,
 
 /**
  * PAGINATION
- * Eciaiaiea eiiiie iacaa/aia?aa e oaaee?aiea oaenoa
+ * Изменение кнопок назад/вперед и увеличение текста
  */
 .p-animes_collection-index .pagination,
 .p-recommendations-index .pagination {
@@ -2732,7 +2732,7 @@ input[type=checkbox]:checked:disabled,
 
 /**
  * SUBHEADER
- * Eciaiaiea iiacaaieiaeia ?acaaeia e nnueie a ieo.
+ * Изменение подзаголовков разделов и ссылок в них.
  */
 .headline {
   padding: 8px 0;
@@ -2854,7 +2854,7 @@ input[type=checkbox]:checked:disabled,
 
 /* END of SUBHEADER */
 /**
- * OO?IE?U
+ * ТУРНИРЫ
  */
 .p-contests .match-container.b-ajax:after {
   z-index: 10;
@@ -3087,7 +3087,7 @@ input[type=checkbox]:checked:disabled,
   display: inline-block;
 }
 
-/* Eiiiee oo?ie?a */
+/* Кнопки турнира */
 .b-contest_match .vs .action {
   display: inline-block;
   vertical-align: top;
@@ -3112,7 +3112,7 @@ input[type=checkbox]:checked:disabled,
   background-color: rgba(117, 11, 115, 0.24);
 }
 
-/* Oaeno aioo?e eiiiee */
+/* Текст внутри кнопки */
 .b-contest_match .vs .actions .action span {
   padding: 0 1rem;
   line-height: 2rem;
@@ -3126,7 +3126,7 @@ input[type=checkbox]:checked:disabled,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Oae?aai ?aeoia naa?aiea iinoa?ia */
+/* Убираем желтое свечение постеров */
 .b-contest_match .current-match .match-members .match-member > .b-catalog_entry.yellow-fade {
   background: transparent;
   outline-color: transparent;
@@ -3139,7 +3139,7 @@ input[type=checkbox]:checked:disabled,
   }
 }
 
-/* BUG: font-size io?ii oeacaou aioo?e niioaaonoao?uaai yeaiaioa */
+/* BUG: font-size нужно указать внутри соответствующего элемента */
 @media only screen and (min-width: 768px) {
   .b-contest_match .vs {
     font-size: inherit;
@@ -3150,7 +3150,7 @@ input[type=checkbox]:checked:disabled,
   }
 }
 
-/* Iiaeeuiay aa?ney */
+/* Мобильная версия */
 @media (max-width: 480px) {
   .p-contests .b-contest_match .prev-match,
   .p-contests .b-contest_match .next-match {
@@ -3218,7 +3218,7 @@ input[type=checkbox]:checked:disabled,
     display: block;
     padding: 0;
   }
-  /* Eiioaeia? iianeacie e eiiiie oo?ie?a */
+  /* Контейнер подсказок и кнопок турнира */
   .p-contests .b-contest_match .vs {
     position: absolute;
     top: 0;
@@ -3227,7 +3227,7 @@ input[type=checkbox]:checked:disabled,
     margin: 0;
     font-size: inherit;
   }
-  /* Aeie eiiiie oo?ie?a */
+  /* Блок кнопок турнира */
   .b-contest_match .vs .actions {
     position: absolute;
     top: 0;
@@ -3235,15 +3235,15 @@ input[type=checkbox]:checked:disabled,
     right: 0;
     font-size: inherit;
   }
-  /* Eiiiea "E neaao?uae ia?a" */
+  /* Кнопка "К следующей паре" */
   .b-contest_match .vs .action:nth-child(2) {
     display: none;
   }
-  /* Iianeacea: "Eeeeieoa ii iaiiio ec aaoo aa?eaioia" */
-  /* Iianeacea: "Aao aiein o?o?i!" */
-  /* Iianeacea: "Au aicaa??aeenu a yoii aieiniaaiee" */
-  /* Iianeacea: "Ia naaiaiy an?! Nianeai ca o?anoea!" */
-  /* Iianeacea: "Aieiniaaiea au? ia ia?aeinu" */
+  /* Подсказка: "Кликните по одному из двух вариантов" */
+  /* Подсказка: "Ваш голос учтён!" */
+  /* Подсказка: "Вы воздержались в этом голосовании" */
+  /* Подсказка: "На сегодня всё! Спасибо за участие!" */
+  /* Подсказка: "Голосование ещё не началось" */
   .b-contest_match .vs .invitation,
   .b-contest_match .vs .vote-voted,
   .b-contest_match .vs .vote-abstained,
@@ -3253,7 +3253,7 @@ input[type=checkbox]:checked:disabled,
     line-height: 40px;
     margin: 0;
   }
-  /* Iianeacea: "Ia naaiaiy an?! Nianeai ca o?anoea!" */
+  /* Подсказка: "На сегодня всё! Спасибо за участие!" */
   .b-contest_match .vs .thanks {
     position: absolute;
     top: 0;
@@ -3263,7 +3263,7 @@ input[type=checkbox]:checked:disabled,
   .b-contest_match .vs .vote-abstained[style="display: none;"] ~ .thanks {
     display: none !important;
   }
-  /* Eeiiea VS */
+  /* Иконка VS */
   .b-contest_match .vs .label {
     display: inline-block;
     position: absolute;
@@ -3312,47 +3312,47 @@ input[type=checkbox]:checked:disabled,
   }
 }
 
-/* END of Iiaeeuiay aa?ney */
-/* END of OO?IE?U */
+/* END of Мобильная версия */
+/* END of ТУРНИРЫ */
 /**
- * Ii?inu
+ * Опросы
  */
-/* Eiioaeia? */
+/* Контейнер */
 .b-poll {
   margin: .5rem 0;
   line-height: inherit;
 }
 
-/* Oaenoiaue aeie */
+/* Текстовый блок */
 .b-poll .poll {
   margin-bottom: .0;
 }
 
-/* Iacaaiea ii?ina */
-/* Oaeno ii?ina */
-/* Eiioaeia? aey aa?eaioia a ii?ina */
+/* Название опроса */
+/* Текст опроса */
+/* Контейнер для вариантов в опросе */
 .b-poll .poll-variants {
   padding: .5em 0;
   margin: 0;
 }
 
-/* Aa?eaio a ii?ina */
+/* Вариант в опросе */
 .b-poll .poll-variants .poll-variant {
   line-height: 1.5em;
   margin-bottom: .5em;
 }
 
-/* Aa?eaio a ii?ina (caaa?oaiiue) */
+/* Вариант в опросе (завершенный) */
 .b-poll .poll-variants .poll-variant.result {
   margin-bottom: .75em;
 }
 
-/* Ionooi io oaenoa aa?eaioa */
+/* Отступ от текста варианта */
 .b-poll .poll-variants .poll-variant label {
   margin-bottom: .25em;
 }
 
-/* Inaaai ia?aee??aoaeu */
+/* Псевдо переключатель */
 .b-radio input[type="radio"] + .radio-label:before {
   content: '';
   display: inline-block;
@@ -3376,7 +3376,7 @@ input[type=checkbox]:checked:disabled,
   border: 1.5px solid #750b73;
 }
 
-/* Eiiiee aieiniaaiey */
+/* Кнопки голосования */
 .b-poll .poll-actions .vote,
 .b-poll .poll-actions .abstain {
   display: inline-block;
@@ -3421,7 +3421,7 @@ input[type=checkbox]:checked:disabled,
   }
 }
 
-/* Aniiiiaaoaeuiay eioi?iaoey: i?ioaio e noiia aieinia */
+/* Вспомогательная информация: процент и сумма голосов */
 .b-poll .poll-variants .poll-variant.result .votes-percent,
 .b-poll .poll-variants .poll-variant.result .votes-total {
   line-height: inherit;
@@ -3438,7 +3438,7 @@ input[type=checkbox]:checked:disabled,
   margin-left: 1em;
 }
 
-/* Ioiaoea naiaai aa?eaioa */
+/* Отметка своего варианта */
 .b-poll .poll-variants .poll-variant.result label .voted-for {
   padding-left: 0;
   margin-left: 1em;
@@ -3450,7 +3450,7 @@ input[type=checkbox]:checked:disabled,
   display: none;
 }
 
-/* Iieinu */
+/* Полосы */
 .b-poll .poll-variants .poll-variant.result .bar .line,
 .b-poll .poll-variants .poll-variant.result .bar .bar {
   height: 4px;
@@ -3459,7 +3459,7 @@ input[type=checkbox]:checked:disabled,
   border-radius: 2px;
 }
 
-/* Oaao iiein */
+/* Цвет полос */
 .b-poll .poll-variants .poll-variant.result .bar .line {
   background-color: #757575;
 }
@@ -3471,7 +3471,7 @@ input[type=checkbox]:checked:disabled,
   background-color: #750b73;
 }
 
-/* END of II?INU */
+/* END of ОПРОСЫ */
 /* ROUNDED IMAGES */
 .b-dialog > .inner header img,
 .b-message > .inner header img,
@@ -3576,7 +3576,7 @@ input[type=checkbox]:checked:disabled,
 }
 
 .b-user_rate .rate-show .note:before {
-  content: 'Caiaoea';
+  content: 'Заметка';
   display: block;
   font-size: 10px;
 }
@@ -4071,7 +4071,7 @@ header.head,
 
 /**
  * COMMENT
- * Eciaiaiea anao eiiiaioa?eaa, iiainoae, aeaeiaia, oiieeia.
+ * Изменение всех комментариев, новостей, диалогов, топиков.
  */
 .b-comment,
 .b-dialog,
@@ -4100,7 +4100,7 @@ header.head,
   color: #9E9E9E;
 }
 
-/* Eni?aaeaiea aey i?aai?iniio?a eiiiaioa?ey ai anieuaa?uai ieia */
+/* Исправление для предпросмотра комментария во всплывающем окне */
 .tooltip-inner .b-message {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -4144,7 +4144,7 @@ header.head,
   word-break: break-word;
 }
 
-/* Eaaue ionooi eiiiaioa?eaa io e?ay ye?aia */
+/* Левый отступ комментариев от края экрана */
 .b-comment > .inner > .body,
 .b-dialog > .inner > .body,
 .b-message > .inner > .body,
@@ -4156,7 +4156,7 @@ header.head,
   padding-left: 3.5rem;
 }
 
-/* Oeen ionooia a iiainoyo e iiainoiuo oiieeao */
+/* Фикс отступа в новостях и новостных топиках */
 .b-dialog .b-message > .inner > .body,
 .b-topic-preview.mini > .inner > header,
 .b-topic-minified > .inner > header,
@@ -4167,7 +4167,7 @@ header.head,
   padding-left: 0;
 }
 
-/* I?aai?iniio? iienaiey e no?aieo eeoaa */
+/* Предпросмотр описания и страниц клуба */
 .edit_club .b-shiki_editor .b-comment .inner .body,
 .edit_club_page .b-shiki_editor .b-comment .inner .body,
 .new_club_page .b-shiki_editor .b-comment .inner .body {
@@ -4190,7 +4190,7 @@ header.head,
   }
 }
 
-/* END of Eaaue ionooi eiiiaioa?eaa io e?ay ye?aia */
+/* END of Левый отступ комментариев от края экрана */
 .b-comment > .inner header,
 .b-dialog > .inner header,
 .b-message > .inner header,
@@ -4546,7 +4546,7 @@ header.head,
   font-size: .875rem;
 }
 
-/* I?iniio? eiiiaioa?eaa ai anieuaa?uae iianeacea */
+/* Просмотр комментариев во всплывающей подсказке */
 .tooltip .b-comment {
   padding-top: 0 !important;
   padding-bottom: 0;
@@ -4556,7 +4556,7 @@ header.head,
   display: none;
 }
 
-/* Eeiiee eieeaeoee */
+/* Иконки коллекций */
 .b-collection-topic > .inner .status-line .collection-size {
   color: inherit;
 }
@@ -4586,7 +4586,7 @@ header.head,
   color: #EF5350;
 }
 
-/* Eiiiee aieiniaaiey a ?aoaiceyo e eieeaeoeyo */
+/* Кнопки голосования в рецензиях и коллекциях */
 .b-topic .footer-vote {
   padding: 0;
   margin-top: 1rem;
@@ -4681,11 +4681,11 @@ header.head,
   display: none;
 }
 
-/* END of Eiiiee aieiniaaiey a ?aoaiceyo e eieeaeoeyo */
+/* END of Кнопки голосования в рецензиях и коллекциях */
 /**
  * COMMENT DOESN'T SLIDE
- * Aieuoea eiiiaioa?ee, oiieee ia aie?iu naaeaaouny margin'aie.
- * Eeai translate3d eeai ieeae.
+ * Большие комментарии, топики не должны сдвигаться margin'ами.
+ * Либо translate3d либо никак.
  */
 .b-topic.aside-expanded > .inner,
 .b-dialog.aside-expanded > .inner,
@@ -4751,7 +4751,7 @@ header.head,
 /* END of OPEN DIALOG BY CLICK */
 /**
  * BBCode: CODE
- * Iiaue oaa ioaa?a?uee ca ioi?ieaiea i?ia?aiiiuo eiaia.
+ * Новый тег отвечающий за оформление программных кодов.
  */
 code {
   vertical-align: middle;
@@ -4949,7 +4949,7 @@ pre {
   content: 'directions_run';
 }
 
-/* Iaaeaaoey a eeoaao: "eiioaio" */
+/* Навигация в клубах: "контент" */
 .b-pages {
   max-width: 15rem;
   padding: 0 1rem;
@@ -4967,7 +4967,7 @@ pre {
   margin: 0 0 .5rem;
 }
 
-/* Iacaaiey no?aieo eeoaia */
+/* Названия страниц клубов */
 .p-club_pages .l-content .subheadline,
 .p-club_pages .l-content .subheadline > a {
   max-width: 100%;
@@ -5000,7 +5000,7 @@ pre {
 }
 
 /* END of CLUB'S BUTTONS */
-/* Iiene eeoaia e eieeaeoee */
+/* Поиск клубов и коллекций */
 .b-collection_search .field {
   margin-bottom: 1.5rem;
 }
@@ -5030,11 +5030,11 @@ pre {
   font-size: 1.5rem;
 }
 
-/* END of Iiene eeoaia */
+/* END of Поиск клубов */
 /* END of CLUB */
 /**
  * INDEX
- * Eciaiaiey aeaaiie no?aieou.
+ * Изменения главной страницы.
  *
  */
 .p-dashboards-show .c-my_list {
@@ -5063,7 +5063,7 @@ pre {
   }
 }
 
-/* Eciaiaiea iiainoae ia aeaaiie */
+/* Изменение новостей на главной */
 .p-dashboards-show .cc-news .c-news_topics .b-topic {
   padding: 1rem 0 1.5rem;
   border-top-width: 1px;
@@ -5093,9 +5093,9 @@ pre {
   display: none;
 }
 
-/* EIIAO � Eciaiaiea iiainoae ia aeaaiie */
+/* КОНЕЦ – Изменение новостей на главной */
 /* Change Forum Button */
-/* NOTE: Oaaoa iano?aeaa?ony a iauai aeiea OAAOA */
+/* NOTE: Цвета настраиваются в общем блоке ЦВЕТА */
 .p-dashboards-show .b-forums > .b-link_button.maxi {
   position: relative;
   margin-bottom: 0;
@@ -5117,7 +5117,7 @@ pre {
 }
 
 .p-dashboards-show[data-locale="ru"] .b-forums > .b-link_button.maxi:after {
-  content: 'Oi?oi';
+  content: 'Форум';
 }
 
 .p-dashboards-show[data-locale="en"] .b-forums > .b-link_button.maxi:after {
@@ -5125,7 +5125,7 @@ pre {
 }
 
 /* END of Change Forum Button */
-/* Nnueee ia oaeouea oo?ie?u */
+/* Ссылки на текущие турниры */
 .p-dashboards-show .contests .contest {
   margin: 0 -.5rem;
 }
@@ -5144,8 +5144,8 @@ pre {
   text-decoration: none;
 }
 
-/* END of Nnueee ia oaeouea oo?ie?u */
-/* OAIU AI? */
+/* END of Ссылки на текущие турниры */
+/* ТЕМЫ ДНЯ */
 .b-hot_topics {
   padding: .5rem 1rem;
   margin: -.5rem -1rem 0 -1rem;
@@ -5243,7 +5243,7 @@ pre {
 
 /**
  * FORUM
- * NO?AIEOU OI?OIA
+ * СТРАНИЦЫ ФОРУМА
  */
 .p-topics .l-menu .b-forums,
 .block2,
@@ -5339,14 +5339,14 @@ pre {
 /* END of FORUM */
 /**
  * PROFILE
- * I?IOEEU IIEUCIAAOAE?
+ * ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ
  */
-/* Oae?aai eeoiea overflow */
+/* Убираем лишние overflow */
 .p-profiles-show .profile-content {
   overflow: visible;
 }
 
-/* Iano?aeaaai ?aaiiia?iua ionooiu */
+/* Настраиваем равномерные отступы */
 .p-profiles .profile-content .cc-2,
 .p-profiles .profile-content .about,
 .p-profiles .profile-content .cc-2 .c-right .cc-2a {
@@ -5362,7 +5362,7 @@ pre {
   }
 }
 
-/* Iieinu aieia/iaiae */
+/* Полосы аниме/манги */
 .b-stats_bar .bar .first,
 .b-stats_bar .bar .second {
   color: inherit;
@@ -5393,7 +5393,7 @@ pre {
   background-color: rgba(117, 11, 115, 0.72);
 }
 
-/* Noieaeee aeoeaiinoe */
+/* Столбики активности */
 .bar.vertical {
   padding: 0;
   border: none;
@@ -5408,7 +5408,7 @@ pre {
   line-height: 1.25rem;
 }
 
-/* Ai?eciioaeuiua iieinu */
+/* Горизонтальные полосы */
 .bar.horizontal .line {
   padding: 0;
   margin: 0;
@@ -5496,7 +5496,7 @@ pre {
   clear: none;
 }
 
-/* Nienee aieia/iaiae */
+/* Списки аниме/манги */
 .b-stats_bar .stat_names .stat_name:after {
   display: none;
 }
@@ -5512,7 +5512,7 @@ pre {
   line-height: inherit;
 }
 
-/* Auiaaa?uee nienie aieia/iaiae a i?ioeea */
+/* Выпадающий список аниме/манги в профиле */
 @media screen and (max-width: 599px) {
   .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
     position: relative;
@@ -5591,8 +5591,8 @@ pre {
   }
 }
 
-/* Eiiao: Auiaaa?uee nienie aieia/iaiae a i?ioeea */
-/* NO?AIEOA ?AAAEOE?IAAIE? AEEAOIOA */
+/* Конец: Выпадающий список аниме/манги в профиле */
+/* СТРАНИЦА РЕДАКТИРОВАНИЯ АККАУНТА */
 .p-profiles-edit .account .c-column .block:not(:last-child) {
   margin-bottom: 3rem;
 }
@@ -5616,7 +5616,7 @@ pre {
 }
 
 .change-password a[href*='/edit/password']::after {
-  content: 'Eciaieou';
+  content: 'Изменить';
   display: inline-block;
   padding: .375rem 1rem;
   background: #750b73;
@@ -5740,7 +5740,7 @@ pre {
   content: 'delete';
 }
 
-/* Eiiiaioa?ee ia iinoa?a */
+/* Комментарий на постере */
 .p-user_rates-index .list-posters .user_rate > .text {
   bottom: 4rem;
   padding: .25rem .5rem;
@@ -5859,7 +5859,7 @@ pre {
   display: none;
 }
 
-/* Iieii?acia?iay nnueea .entry, ?aaioaao oieuei aey .c-history & .l-menu */
+/* Полноразмерная ссылка .entry, работает только для .c-history & .l-menu */
 .p-profiles .profile-head .c-history .entry a {
   display: block;
   padding: .5rem .5rem;
@@ -5893,7 +5893,7 @@ pre {
   font-size: .75em;
 }
 
-/* No?aieoa enoi?ee iieuciaaoaey */
+/* Страница истории пользователя */
 .p-user_history-index .history-page .history-interval p {
   line-height: 1.5rem;
   margin-bottom: 0;
@@ -5908,13 +5908,13 @@ pre {
   font-size: .875rem;
 }
 
-/* No?aieoa n?aaiaiey nieneia */
+/* Страница сравнения списков */
 .p-userlist_comparer .notice span {
   padding: 1.5px 4px !important;
   border-radius: 2px;
 }
 
-/* Oaaoa nieneia */
+/* Цвета списков */
 .p-userlist_comparer .comparer table .abslt-difr,
 .p-userlist_comparer .legend .abslt-difr,
 .p-userlist_comparer .notice span:nth-child(6) {
@@ -5954,14 +5954,14 @@ pre {
 }
 
 .p-profiles[data-locale="ru"] .profile-head .c-info .c-additionals b:after {
-  content: 'Aeoeaiinou ia naeoa:';
+  content: 'Активность на сайте:';
 }
 
 .p-profiles[data-locale="en"] .profile-head .c-info .c-additionals b:after {
   content: 'Activity:';
 }
 
-/* A?aiy ca aieia e iaiaa */
+/* Время за аниме и манга */
 .p-profiles .lifetime .bar, .p-profiles .lifetime .times {
   line-height: 0;
 }
@@ -6003,10 +6003,10 @@ pre {
 }
 
 /**
- * Eeiiee niaianoeiinoe aey i?ioeey
+ * Иконки совместимости для профиля
  */
-/* Eni?aaeaiea aeaeiinoe */
-/* Nianeai Kana Kuroki e Dewopalaxy */
+/* Исправление видимости */
+/* Спасибо Kana Kuroki и Dewopalaxy */
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
   position: relative;
   overflow: visible;
@@ -6119,7 +6119,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility > a[href$='=similar']::after {
-  content: 'Iaeoe iioi?eo iieuciaaoaeae';
+  content: 'Найти похожих пользователей';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility > a[href$='=similar']::after {
@@ -6127,7 +6127,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility .text.zero::after {
-  content: 'Iao niaianoeiinoe';
+  content: 'Нет совместимости';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility .text.zero::after {
@@ -6135,7 +6135,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility .text.weak::after {
-  content: 'Ieceay niaianoeiinou';
+  content: 'Низкая совместимость';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility .text.weak::after {
@@ -6143,7 +6143,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility .text.moderate::after {
-  content: 'N?aaiyy niaianoeiinou';
+  content: 'Средняя совместимость';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility .text.moderate::after {
@@ -6151,7 +6151,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility .text.high::after {
-  content: 'Aunieay niaianoeiinou';
+  content: 'Высокая совместимость';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility .text.high::after {
@@ -6159,7 +6159,7 @@ pre {
 }
 
 [data-locale="ru"] .b-stats_bar .compatibility .text.full::after {
-  content: 'Iieiay niaianoeiinou';
+  content: 'Полная совместимость';
 }
 
 [data-locale="en"] .b-stats_bar .compatibility .text.full::after {
@@ -6255,12 +6255,12 @@ pre {
   margin-right: .5rem !important;
 }
 
-/* BUG: Eeoiee i?iaae a ?aciaoea */
+/* BUG: Лишний пробел в разметке */
 .b-quote .quoteable a.bubbled-processed {
   margin-right: 0.25rem !important;
 }
 
-/* BUG: Eeoiee i?iaae a ?aciaoea */
+/* BUG: Лишний пробел в разметке */
 .b-quote .quoteable a.bubbled-processed > img {
   margin-right: 0.125rem !important;
 }
@@ -6482,13 +6482,13 @@ pre {
 /* END of MODERATION LIST */
 /**
  * MATERIAL ICON
- * Caiaia eeiiie.
+ * Замена иконок.
  *
- * I?AAEEA:
- * Neaao?uea iano?ieee eana?ony oieuei eeiiie. Eo oaaoa, ?iaeoaee e eo iiei?aiea iano?aeaaaony ioaaeuii.
- * Eeiiee aie?iu ?aniieaaaouny a inaaaiyeaiaioa :before
- * Eeiiee eniieuco?ony a aaoo aa?eaioao: 18px e 24px
- * Neaaiaaoaeuii ?iaeoaee eeiiie aie?iu auou aunioie 32px eee 40px
+ * ПРАВИЛА:
+ * Следующие настройки касаются только иконок. Их цвета, родители и их положение настраивается отдельно.
+ * Иконки должны располагаться в псевдоэлементе :before
+ * Иконки используются в двух вариантах: 18px и 24px
+ * Следовательно родители иконок должны быть высотой 32px или 40px
  *
  * BUG:
  * IE doesn't support Materail Icon's font format [.woff2]
@@ -6500,7 +6500,7 @@ pre {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.eot) format("eot"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.ttf) format("truetype");
 }
 
-/* Noeee Material Icons */
+/* Стили Material Icons */
 .b-collection-topic > .inner .status-line .collection-size:before,
 .b-review_votes:before,
 .b-topic .footer-vote .star:before,
@@ -6624,7 +6624,7 @@ pre {
   content: 'chevron_right';
 }
 
-/* Eeiiee nienea aieia/iaiae iieuciaaoaey */
+/* Иконки списка аниме/манги пользователя */
 .b-add_to_list .plus:before {
   content: "add";
 }
@@ -6663,7 +6663,7 @@ pre {
   transform: rotate(180deg);
 }
 
-/* Eeiiee i?ioeey */
+/* Иконки профиля */
 .profile-actions .mail:before {
   content: "mail";
 }
@@ -6701,7 +6701,7 @@ pre {
   content: "gavel";
 }
 
-/* Eeiiee iia iinoa?ii aieia/iaiae/ia?niia?a e o.a. */
+/* Иконки под постером аниме/манги/персонажа и т.д. */
 .c-actions .edit:before {
   content: "build";
 }
@@ -6724,12 +6724,12 @@ pre {
   content: "chat_bubble";
 }
 
-/* Niaoeaeuiay eeiiea ioe?uaa?uay iai? eiiiaioa?ey/oiieea e o.a. */
+/* Специальная иконка открывающая меню комментария/топика и т.д. */
 .item-mobile:before {
   content: "more_vert";
 }
 
-/* Eeiiea "cae?uou" */
+/* Иконка "закрыть" */
 .b-dialog.aside-expanded > .inner > .item-mobile:before,
 .b-message.aside-expanded > .inner > .item-mobile:before,
 .b-comment.aside-expanded > .inner > .item-mobile:before {
@@ -7198,7 +7198,7 @@ header.head h2 a.back::after {
   width: 20rem !important;
 }
 
-/* Iieina caa?ocee. thx Dewopalaxy */
+/* Полоса загрузки. thx Dewopalaxy */
 .b-upload_progress.active {
   height: 1.5rem;
 }
@@ -7245,7 +7245,7 @@ header.head h2 a.back::after {
 }
 
 .b-shiki_editor.previewed footer .unpreview:after {
-  content: 'Iacaa';
+  content: 'Назад';
   vertical-align: top;
   font-size: 14px;
 }
@@ -7303,7 +7303,7 @@ header.head h2 a.back::after {
     text-transform: uppercase;
   }
   [data-locale="ru"] .about-bb_codes:before {
-    content: 'Ni?aaea';
+    content: 'Справка';
   }
   [data-locale="en"] .about-bb_codes:before {
     content: 'Help';
@@ -7469,7 +7469,7 @@ header.head h2 a.back::after {
 }
 
 /* END of FLOATED OPTIONS */
-/* USER'S MAIL ICONS � READ ALL & DELETE ALL */
+/* USER'S MAIL ICONS – READ ALL & DELETE ALL */
 .p-dialogs .misc-links,
 .p-messages .mass-actions {
   position: absolute;
@@ -7494,7 +7494,7 @@ header.head h2 a.back::after {
 }
 
 .p-dialogs[data-locale='ru'] .misc-links > a::after {
-  content: 'Iai?i?eoaiiua ia?eiay ni noa?uo';
+  content: 'Непрочитанные начиная со старых';
 }
 
 .p-dialogs[data-locale='en'] .misc-links > a::after {
@@ -7525,7 +7525,7 @@ header.head h2 a.back::after {
 }
 
 .p-messages[data-locale="ru"] .mass-actions > .action:nth-child(1) > a:after {
-  content: 'I?i?eoaou an?';
+  content: 'Прочитать всё';
 }
 
 .p-messages[data-locale="en"] .mass-actions > .action:nth-child(1) > a:after {
@@ -7533,7 +7533,7 @@ header.head h2 a.back::after {
 }
 
 .p-messages[data-locale="ru"] .mass-actions > .action:nth-child(2) > a:after {
-  content: 'Oaaeeou an?';
+  content: 'Удалить всё';
 }
 
 .p-messages[data-locale="en"] .mass-actions > .action:nth-child(2) > a:after {
@@ -7619,7 +7619,7 @@ header.head h2 a.back::after {
   display: none;
 }
 
-/* Iieii?acia?iay nnueea .entry, ?aaioaao oieuei aey .l-menu */
+/* Полноразмерная ссылка .entry, работает только для .l-menu */
 .p-topics .l-menu .calendar .entry a,
 .p-topics .l-menu .reviews .entry a,
 .p-topics .l-menu .clubs .entry a {
@@ -7695,7 +7695,7 @@ header.head h2 a.back::after {
 }
 
 /* END of SIDEMENU LINKS */
-/* Noeeeciaaiiua eiiiee ia no?aieoao iienea aieia e iaiae */
+/* Стилизованные кнопки на страницах поиска аниме и манги */
 .p-user_rates .mylist-block + .block + .block + .block > .b-list,
 .b-collection-filters > .block:nth-child(3) > .b-list {
   margin-left: 0 !important;
@@ -7761,11 +7761,11 @@ header.head h2 a.back::after {
   text-decoration: none;
 }
 
-/* END of Noeeeciaaiiua eiiiee ia no?aieoao iienea aieia e iaiae */
+/* END of Стилизованные кнопки на страницах поиска аниме и манги */
 /**
- * Oeeuo?u ia no?aieoao iienea
+ * Фильтры на страницах поиска
  */
-/* Iano?ieea ioieoia */
+/* Настройка пунктов */
 .b-collection-filters .block-list li,
 .b-collection-filters .b-block_list li {
   position: relative;
@@ -7775,13 +7775,13 @@ header.head h2 a.back::after {
   line-height: 2rem;
 }
 
-/* Ionooi aey iiaioieoia */
+/* Отступ для подпунктов */
 .b-collection-filters .block-list li.sub,
 .b-collection-filters .b-block_list li.sub {
   padding-left: 2.5rem;
 }
 
-/* Ne?uaaai ?aeaien, ?aniieaaaai iaa inaaaiyeaiaioii */
+/* Скрываем чекбокс, располагаем над псевдоэлементом */
 .b-collection-filters .block-list li > input,
 .b-collection-filters .b-block_list li > input {
   position: absolute;
@@ -7795,7 +7795,7 @@ header.head h2 a.back::after {
   appearance: none;
 }
 
-/* Inaaaiyeaiaio n eeiieie ?aeaiena */
+/* Псевдоэлемент с иконкой чекбокса */
 .b-collection-filters .block-list li:before,
 .b-collection-filters .b-block_list li:before {
   display: inline-block;
@@ -7820,8 +7820,8 @@ header.head h2 a.back::after {
   font-feature-settings: 'liga';
 }
 
-/* Oeeuo?u ia no?aieoao iienea � IIANEACEE */
-/* Iiei?aiea iianeacee */
+/* Фильтры на страницах поиска – ПОДСКАЗКИ */
+/* Положение подсказки */
 .b-collection-filters .block-list .b-question,
 .b-collection-filters .b-block_list .b-question {
   display: inline-block !important;
@@ -7830,7 +7830,7 @@ header.head h2 a.back::after {
   right: .3125rem;
 }
 
-/* Eeiiea iianeacee */
+/* Иконка подсказки */
 .b-collection-filters .block-list .b-question:before,
 .b-collection-filters .b-block_list .b-question:before {
   display: block;
@@ -7856,8 +7856,8 @@ header.head h2 a.back::after {
   font-feature-settings: 'liga';
 }
 
-/* Oeeuo?u ia no?aieoao iienea � IA?AEE??AOAEE */
-/* Iiei?aiea ia?aee??aoaey */
+/* Фильтры на страницах поиска – ПЕРЕКЛЮЧАТЕЛИ */
+/* Положение переключателя */
 .b-collection-filters .filter {
   top: 0;
 }
@@ -7870,7 +7870,7 @@ header.head h2 a.back::after {
   margin: 0 0 0 .5rem;
 }
 
-/* Iiei?aiea ia?aee??aoaey n eeiieaie iianeacie */
+/* Положение переключателя с иконками подсказок */
 .b-collection-filters .block-list.ratings .filter,
 .b-collection-filters .block-list.genres .filter,
 .b-collection-filters .block-list li.sub .filter,
@@ -7880,7 +7880,7 @@ header.head h2 a.back::after {
   margin-right: 2rem;
 }
 
-/* Na?anuaaai noaiaa?oiua noeee */
+/* Сбрасываем стандартные стили */
 .b-collection-filters .block-list .filter:before,
 .b-collection-filters .b-block_list .filter:before {
   display: block;
@@ -7891,9 +7891,9 @@ header.head h2 a.back::after {
   text-transform: lowercase;
 }
 
-/* Aiaaaeyai iiiyoiua oaenoiaua iaicia?aiey */
+/* Добавляем понятные текстовые обозначения */
 [data-locale="ru"] .b-collection-filters .b-block_list .filter.item-add:before {
-  content: 'Enee??eou';
+  content: 'Исключить';
 }
 
 [data-locale="en"] .b-collection-filters .b-block_list .filter.item-add:before {
@@ -7901,14 +7901,14 @@ header.head h2 a.back::after {
 }
 
 [data-locale="ru"] .b-collection-filters .b-block_list .filter.item-minus:before {
-  content: 'Aiaaaeou';
+  content: 'Добавить';
 }
 
 [data-locale="en"] .b-collection-filters .b-block_list .filter.item-minus:before {
   content: 'Include';
 }
 
-/* Iano?ieea eeiiie */
+/* Настройка иконок */
 .b-collection-filters .block-list li:before {
   content: 'check_box_outline_blank';
 }
@@ -7949,7 +7949,7 @@ header.head h2 a.back::after {
   content: 'help_outline';
 }
 
-/* Oeeuo?u ia no?aieoao iienea � ?acia? aey IE */
+/* Фильтры на страницах поиска – Размер для ПК */
 @media (min-width: 1025px) {
   .b-collection-filters .block-list li {
     line-height: 1.5rem;
@@ -7980,8 +7980,8 @@ header.head h2 a.back::after {
   }
 }
 
-/* END of Oeeuo?u ia no?aieoao iienea */
-/* "Iie nienie" a oeeuo?ao iienea */
+/* END of Фильтры на страницах поиска */
+/* "Мой список" в фильтрах поиска */
 .b-collection-filters .mylist-block .subheadline {
   font-size: 0;
   line-height: 0;
@@ -7993,7 +7993,7 @@ header.head h2 a.back::after {
 }
 
 [data-locale='ru'] .b-collection-filters .mylist-block .subheadline::after {
-  content: 'Iie nienie';
+  content: 'Мой список';
 }
 
 [data-locale='en'] .b-collection-filters .mylist-block .subheadline::after {
@@ -8008,7 +8008,7 @@ header.head h2 a.back::after {
   content: 'playlist_add_check';
 }
 
-/* No?aieoa aeaai */
+/* Страница видео */
 .b-video_player .cc-player_controls .episode-num input {
   margin: .75rem .25rem;
 }
@@ -8060,7 +8060,7 @@ header.head h2 a.back::after {
   text-decoration: none;
 }
 
-/* Iiacaaieiaee ia no?aieoa aeaai */
+/* Подзаголовки на странице видео */
 .p-anime_videos-index .same-videos .title,
 .p-anime_videos-index .c-anime_video_episodes .title,
 .p-anime_videos-index .c-videos .title {
@@ -8083,14 +8083,14 @@ header.head h2 a.back::after {
 }
 
 .p-anime_videos-index.x1000[data-locale="ru"] .c-videos .title:after {
-  content: 'Aa?eaiou';
+  content: 'Варианты';
 }
 
 .p-anime_videos-index.x1000[data-locale="en"] .c-videos .title:after {
   content: 'Variants';
 }
 
-/* Ia?aee??aoaee a aa?eaioao aeaai */
+/* Переключатели в вариантах видео */
 .p-anime_videos-index .c-videos .video-variant-switcher {
   float: right;
   margin: 0;
@@ -8109,7 +8109,7 @@ header.head h2 a.back::after {
   border: 0;
 }
 
-/* Eeiiee */
+/* Иконки */
 .b-video_player .cc-player_controls .c-control .icon {
   width: 2.5rem !important;
   height: 2.5rem;
@@ -8173,7 +8173,7 @@ header.head h2 a.back::after {
 
 
 
-/* SVG-a?aoeee ia no?aieoao i naeoa e eiaono?ee aieia */
+/* SVG-графики на страницах о сайте и индустрии аниме */
 .highcharts-root .highcharts-background {
   fill: #303030;
 }
@@ -8208,7 +8208,7 @@ header.head h2 a.back::after {
   fill: #FFFFFF !important;
 }
 
-/* END of INIIAIIE OAEE */
+/* END of ОСНОВНОЙ ФАЙЛ */
 
 
 
@@ -8292,72 +8292,72 @@ header.head h2 a.back::after {
   display: none;
 }
 
-/* Oaao oaenoa ioieoia iai? i?e iaaaaaiee */
-/* Oaao oaenoa aeoeaiuo ioieoia iai? */
-/* Ii oiie?aie?: oaao oaenoa ianeaaoaony io iai? */
+/* Цвет текста пунктов меню при наведении */
+/* Цвет текста активных пунктов меню */
+/* По умолчанию: цвет текста наследуется от меню */
 .l-top_menu .menu-items > .entry.selected,
 .l-top_menu .menu-items > .entry > a:active {
   color: inherit !important;
 }
 
-/* Oaao oaenoa ioieoia iai? i?e iaaaaaiee */
-/* Ii oiie?aie?: oaao oaenoa ianeaaoaony io iai? */
+/* Цвет текста пунктов меню при наведении */
+/* По умолчанию: цвет текста наследуется от меню */
 .l-top_menu .menu-items > .entry:hover {
   color: inherit;
 }
 
-/* AUIAAA?UAA IAI? */
+/* ВЫПАДАЮЩЕЕ МЕНЮ */
 @media only screen and (min-width: 1025px) {
-  /* Oaao oiia auiaaa?uaai iai? i?e iaaaaaiee */
+  /* Цвет фона выпадающего меню при наведении */
   .l-top_menu .submenu,
   .b-main_search ul.popup {
     background: #530254;
   }
-  /* Oaao ioieoia auiaaa?uaai iai? i?e uae?ea */
-  /* Oaao aeoeaiuo ioieoia auiaaa?uaai iai? */
-  /* Ii oiie?aie?: caoaiiaiiue oaao oiia auiaaa?uaai iai? */
+  /* Цвет пунктов выпадающего меню при щелчке */
+  /* Цвет активных пунктов выпадающего меню */
+  /* По умолчанию: затемненный цвет фона выпадающего меню */
   .l-top_menu .submenu > .entry:active,
   .l-top_menu .submenu > .entry.active {
     background-color: rgba(0, 0, 0, 0.24);
   }
-  /* Oaao ioieoia auiaaa?uaai iai? i?e iaaaaaiee */
-  /* Ii oiie?aie?: inaaoeaiiue oaao oiia auiaaa?uaai iai? */
+  /* Цвет пунктов выпадающего меню при наведении */
+  /* По умолчанию: осветленный цвет фона выпадающего меню */
   .l-top_menu .submenu > .entry:hover {
     background-color: rgba(255, 255, 255, 0.24);
   }
-  /* Oaao oaenoa auiaaa?ueo iai? */
-  /* Ii oiie?aie?: oaao oaenoa ianeaaoaony io iai? */
+  /* Цвет текста выпадающих меню */
+  /* По умолчанию: цвет текста наследуется от меню */
   .l-top_menu .menu-search > .entry,
   .l-top_menu .menu-userbox > .entry,
   .l-top_menu .submenu {
     color: inherit;
   }
-  /* Oaao oaenoa auiaaa?ueo iai? i?e uae?ea */
-  /* Oaao oaenoa aeoeaiuo ioieoia auiaaa?uaai iai? */
-  /* Ii oiie?aie?: oaao oaenoa ianeaaoaony io auiaaa?uaai iai? */
+  /* Цвет текста выпадающих меню при щелчке */
+  /* Цвет текста активных пунктов выпадающего меню */
+  /* По умолчанию: цвет текста наследуется от выпадающего меню */
   .l-top_menu .submenu > .entry:active,
   .l-top_menu .submenu > .entry.active,
   .b-main_search .popup li:active,
   .b-main_search .popup li.active {
     color: inherit;
   }
-  /* Oaao oaenoa auiaaa?ueo iai? i?e iaaaaaiee */
-  /* Ii oiie?aie?: oaao oaenoa ianeaaoaony io auiaaa?uaai iai? */
+  /* Цвет текста выпадающих меню при наведении */
+  /* По умолчанию: цвет текста наследуется от выпадающего меню */
   .l-top_menu .submenu > .entry:hover,
   .b-main_search .popup li:hover {
     color: inherit;
   }
-  /* OAAOA IIENEA */
-  /* Oii no?iee iienea  */
+  /* ЦВЕТА ПОИСКА */
+  /* Фон строки поиска  */
   .b-main_search .input {
     background: rgba(250, 250, 250, 0.06);
     color: inherit;
   }
-  /* Iaae?aaiue oaeno a no?iea iienea  */
+  /* Набираемый текст в строке поиска  */
   .b-main_search .input input {
     color: inherit;
   }
-  /* Aniiiiaaoaeuiue oaeno a no?iea iienea  */
+  /* Вспомогательный текст в строке поиска  */
   .b-main_search input::-webkit-input-placeholder {
     color: rgba(250, 250, 250, 0.56);
   }
@@ -8372,7 +8372,7 @@ header.head h2 a.back::after {
   }
 }
 
-/* IAUEA OAAOA IIENEA */
+/* ОБЩИЕ ЦВЕТА ПОИСКА */
 .b-main_search .popup li:hover {
   background-color: rgba(255, 255, 255, 0.24);
 }
@@ -8389,8 +8389,8 @@ header.head h2 a.back::after {
   color: inherit;
 }
 
-/* OAAO EEIIIE a iai? (aey iiaeeuiie aa?nee) */
-/* Ii oiie?aie?: oaao oaenoa ianeaaoaony io iai? */
+/* ЦВЕТ ИКОНОК в меню (для мобильной версии) */
+/* По умолчанию: цвет текста наследуется от меню */
 .l-top_menu .to-mobile-forum,
 .l-top_menu .menu-mobile .search,
 .l-top_menu .menu-mobile .menu,
@@ -8401,8 +8401,8 @@ header.head h2 a.back::after {
   color: inherit;
 }
 
-/* END of Iano?ieea oaaoia a iai? */
-/* NOTE: Iaeneiaeuiia ?ac?aoaiea SONY Xperia Z Ultra: 960x540px */
+/* END of Настройка цветов в меню */
+/* NOTE: Максимальное разрешение SONY Xperia Z Ultra: 960x540px */
 @media screen and (min-width: 480px) and (max-height: 540px) and (orientation: landscape) {
   .l-top_menu {
     padding: 0;
@@ -8412,7 +8412,7 @@ header.head h2 a.back::after {
   }
 }
 
-/* Ia ieaioaoao e aaeaa, aunioa iai? ?aaia 56px */
+/* На планшетах и далее, высота меню равна 56px */
 @media screen and (min-width: 961px) and (orientation: landscape) {
   .l-top_menu {
     padding: 4px 0;
@@ -8611,7 +8611,7 @@ header.head h2 a.back::after {
   }
 }
 
-/* Oaeno aianoi eeiiie a aa?oiai iai? */
+/* Текст вместо иконок в верхнем меню */
 .l-top_menu .menu-items > .entry.calendar > a,
 .l-top_menu .menu-items > .entry.info > a {
   padding: 1em;
@@ -8639,7 +8639,7 @@ header.head h2 a.back::after {
 }
 
 [data-locale="ru"] .l-top_menu .menu-items > .entry.calendar > a::after {
-  content: 'Eaeaiaa?u iiaieiaia';
+  content: 'Календарь онгоингов';
 }
 
 [data-locale="en"] .l-top_menu .menu-items > .entry.calendar > a::after {
@@ -8647,15 +8647,15 @@ header.head h2 a.back::after {
 }
 
 [data-locale="ru"] .l-top_menu .menu-items > .entry.info > a::after {
-  content: 'Eioi?iaoey';
+  content: 'Информация';
 }
 
 [data-locale="en"] .l-top_menu .menu-items > .entry.info > a::after {
   content: 'Info';
 }
 
-/* END of Oaeno aianoi eeiiie a aa?oiai iai? */
-/* Oaaaiieaiey i aieiniaaieyo */
+/* END of Текст вместо иконок в верхнем меню */
+/* Уведомления о голосованиях */
 .l-top_menu .menu-items > .entry > a.contest {
   position: relative;
 }
@@ -8688,7 +8688,7 @@ header.head h2 a.back::after {
   }
 }
 
-/* END of Oaaaiieaiey i aieiniaaieyo */
+/* END of Уведомления о голосованиях */
 .l-top_menu .submenu,
 .b-main_search ul.popup {
   min-width: 112px;
@@ -9019,7 +9019,7 @@ header.head h2 a.back::after {
 
 
 /**
- * Eeiiee a iai?
+ * Иконки в меню
  */
 .l-top_menu .to-mobile-forum::before {
   content: 'forum';
@@ -9287,7 +9287,7 @@ header.head h2 a.back::after {
 }
 
 [data-locale='ru'] .l-page .menu-toggler .toggler::after {
-  content: 'iai?';
+  content: 'меню';
 }
 
 [data-locale='en'] .l-page .menu-toggler .toggler::after {
@@ -9365,7 +9365,7 @@ header.head h2 a.back::after {
 
 /**
  * Dashboard Layout
- * Eciaiaiea iiei?aiey aeieia ia aeaaiie no?aieoa
+ * Изменение положения блоков на главной странице
  */
 .p-dashboards-show .cc-second .cc-inner {
   display: none;
@@ -9419,7 +9419,7 @@ header.head h2 a.back::after {
 /* END of Dashboard Layout */
 /**
  * List of User
- * Nienie iieuciaaoaeae iaiyaony ia ea?oi?ee iieuciaaoaeae
+ * Список пользователей меняется на карточки пользователей
  */
 .p-users .b-user.detailed {
   display: inline-block;
@@ -9945,7 +9945,7 @@ header.head h2 a.back::after {
 }
 
 .p-profiles[data-locale="ru"] .lifetime .title > .label:before {
-  content: 'Aeoeaiinou';
+  content: 'Активность';
 }
 
 .p-profiles[data-locale="en"] .lifetime .title > .label:before {
@@ -10018,7 +10018,7 @@ header.head h2 a.back::after {
 
 /* END of Profile Content */
 /**
- * A?aoee aeoeaiinoe
+ * График активности
  */
 .p-profiles-show .profile-content .activity .title {
   margin: 0;
@@ -10030,7 +10030,7 @@ header.head h2 a.back::after {
 }
 
 [data-locale='ru'] .profile-content .activity .title::after {
-  content: 'A?aoee aeoeaiinoe';
+  content: 'График активности';
   font-size: 14px;
   line-height: 16px;
 }
@@ -10135,8 +10135,8 @@ header.head h2 a.back::after {
 }
 
 /**
- * AIEIAO?
- * A?aiy ca aieia e iaiaie
+ * ДНИМЕТР
+ * Время за аниме и мангой
  */
 .profile-content .lifetime .bar,
 .profile-content .lifetime .times,
@@ -10175,8 +10175,8 @@ header.head h2 a.back::after {
 }
 
 /**
- * A?OCU? E EEOAU
- * Iano?ieee aeieia i?ioeey
+ * ДРУЗЬЯ И КЛУБЫ
+ * Настройки блоков профиля
  */
 @media (max-width: 959px) {
   .profile-content .cc-2a > .c-column {
@@ -10649,17 +10649,17 @@ header.head h2 a.back::after {
 }
 
 .b-video.youtube .marker::before {
-  content: '?';
+  content: '▶';
   color: #ed443c;
 }
 
 .b-video.vk .marker::before {
-  content: '?';
+  content: '▶';
   color: #5992e8;
 }
 
 .b-video.smotret_anime .marker::before {
-  content: '?';
+  content: '▶';
   color: #CDDC39;
 }
 
@@ -10794,8 +10794,8 @@ header.head h2 a.back::after {
 .c-anime_video_episodes .b-video_variant a span:last-child {
   clear: both;
 }
-/* IIE IANO?IEEE */
-/* Oii no?aieou */
+/* МОИ НАСТРОЙКИ */
+/* Фон страницы */
 
 
 
@@ -10857,16 +10857,16 @@ body {
 
 @media screen and (min-width: 1200px) {
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.anime, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.manga {
-    opacity: 0.70; /* i?ic?a?iinou , "0.21" - 21%, "1" - 100%, "0" - 0% "10" - 1000%*/
+    opacity: 0.70; /* прозрачность , "0.21" - 21%, "1" - 100%, "0" - 0% "10" - 1000%*/
 }
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime:hover, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.anime:hover, .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga:hover, .x1000 > .l-page div .profile-head .c-info .c-lists-info .b-stats_bar.manga:hover {
-    opacity: 10; /* i?ic?a?iinou , "0.1" - 10%, "1" - 100%, "0" - 0%, "10" - 1000%*/
+    opacity: 10; /* прозрачность , "0.1" - 10%, "1" - 100%, "0" - 0%, "10" - 1000%*/
 }
 }
 
 
 
-/* Eiiiaeoiay ni?oe?iaea oaaaiieaiee ia yieciaao */
+/* Компактная сортировка уведомлений об эпизодах */
 .b-comments { 
   display: inline-block; 
 } 
@@ -10879,22 +10879,22 @@ body {
 
 
 
-/* Aieia/Iaiaa/?aiiay ?yaii n ioieoaie enoi?ee */
+/* Аниме/Манга/Ранобэ рядом с пунктами истории */
 .history-page a:before {
   display: inline-block;
   vertical-align: top;
   width: 72px;
 }
 .history-page a[href ^= "/a"]:before {
-  content: '[Aieia] ';
+  content: '[Аниме] ';
   color: #34a853;
 }
 .history-page a[href ^= "/m"]:before {
-  content: '[Iaiaa] ';
+  content: '[Манга] ';
   color: #9c27b0;
 }
 .history-page a[href ^= "/r"]:before {
-  content: '[?aiiay] ';
+  content: '[Ранобэ] ';
   color: #039be5;
 }
 [data-locale="en"] .history-page a[href ^= "/a"]:before {
@@ -10906,7 +10906,7 @@ body {
 [data-locale="en"] .history-page a[href ^= "/r"]:before {
   content: '[Ranobe] ';
 }
-/* END of Aieia/Iaiaa/?aiiay ?yaii n ioieoaie enoi?ee */
+/* END of Аниме/Манга/Ранобэ рядом с пунктами истории */
 
 
 
@@ -10948,8 +10948,8 @@ body {
 
 
 
-/* Iieoni?oe?iaea ?aaio ia?nii */
-/* Auaia aieia ia?aa iaiaie e ?aiiaa */
+/* Полусортировка работ персон */
+/* Вывод аниме перед мангой и ранобе */
 #people_works .d-cutted_covers {
   display: flex;
   flex-direction: row;
@@ -10965,7 +10965,7 @@ body {
   margin-right: 3.2%;
 }
 
-/* Aecaei y?eueia */
+/* Дизайн ярлыков */
 #people_works .cover:after {
   position: absolute;
   top: 0;
@@ -10976,21 +10976,21 @@ body {
   pointer-events: none;
 }
 
-/* ?acaa?a iacaaiee e oaaoia y?eueai */
+/* Раздача названий и цветов ярлыкам */
 #people_works .cover[href*="//shikimori.one/animes/"]:after {
-  content: 'Aieia';
+  content: 'Аниме';
   background: #4682b4;
 }
 #people_works .cover[href*="//shikimori.one/mangas/"]:after {
-  content: 'Iaiaa';
+  content: 'Манга';
   background: #b78bc7;
 }
 #people_works .cover[href*="//shikimori.one/ranobe/"]:after {
-  content: '?aiiay';
+  content: 'Ранобэ';
   background: #2A6E41;
 }
 
-/* Aiaeeeneee */
+/* Английский */
 #people_works[data-locale="en"] .cover[href*="//shikimori.one/animes/"]:after {
   content: 'Anime';
 }
@@ -11003,18 +11003,18 @@ body {
 
 
 
-/* Ioiaia ?aaiou ne?eioa */
+/* Отмена работы скрипта */
 .b-catalog_entry .cover .image-cutter {
   max-width: none !important;
   max-height: none !important;
 }
-/* Aaeiia ?aaoee?iaaiea ?acia?a iaei?ae */
+/* Единое регулирование размера обложек */
 .b-catalog_entry .cover .image-cutter::before {
   content: '';
   display: block;
   padding-bottom: 155.5%;
 }
-/* Iiceoeiie?iaaiea ecia?a?aiey */
+/* Позиционирование изображения */
 .b-catalog_entry .cover .image-decor img {
   position: absolute;
   top: 0;
@@ -11032,14 +11032,14 @@ body {
 /**/
   .p-profiles-show .lifetime .bar,
 .p-profiles-show .lifetime .times,
-/* + aeoeaiinou ia naeoa (caaieiaie e noieaeee) */
+/* + активность на сайте (заголовок и столбики) */
 .p-profiles-show .profile-content .activity {
   display: none;
 }
 
 
 
-/* I?ic?a?iinou */
+/* Прозрачность */
 .l-page {
     opacity: 0.85;
 }
@@ -11061,7 +11061,7 @@ body {
 
 
 
-/* Oii naeoa (oeene?iaaiiue, ia iieiue ye?ai) */
+/* Фон сайта (фиксированный, на полный экран) */
 body {
   background: url(https://avatars.mds.yandex.net/get-pdb/963318/b8172237-f715-4421-bb1d-f1193ae180ca/s1200) center top / cover fixed;
 }
@@ -11079,10 +11079,10 @@ body {
     display: none;
  }
  .p-profiles header.head .misc:after {
-    content: '';  /* Oaeno iieaei 10 ia?. 2019 a. */
+    content: '';  /* Текст онлайн 10 мар. 2019 г. */
     visibility: visible;
     display: block;
-    color: #f1f3f4;  /* Oaao */
+    color: #f1f3f4;  /* Цвет */
  }
 
 
@@ -11175,13 +11175,13 @@ body {
 
 
 
-/* ?aaecaei eiiiee naa?ioou/?acaa?ioou */
+/* Редизайн кнопки свернуть/развернуть */
 .b-edit_styles .edit_style .style_css label, .b-edit_styles .new_style .style_css label {
     background: #670e6a;
     border-radius: 2px 2px 0 0;
     padding: 4px 10px;
     color: #fff;
-    margin-top: 4px; /* aicii?ii i?ea?ony iano?aeaaou a?o?io?, ?oi au aiaeouny yooaeoa aaeiiiai eioa?oaena */
+    margin-top: 4px; /* возможно придётся настраивать вручную, что бы добиться эффекта единного интерфейса */
   
 }
 .b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse {
@@ -11202,7 +11202,7 @@ body {
     color: #fff;
     transition: 0.16s cubic-bezier(0.4, 0, 0.6, 1);
 }
-/* CSS ?aaaeoi? */
+/* CSS Редактор */
 .cm-s-solarized.cm-s-light {
     background-color: #282638;
     color: #fff;
@@ -11297,7 +11297,7 @@ a {
 
 
 
-/* Iaaieuoia ne?oaeaiea iinoa?ia aieia/iaiae/ia?niia?ae/e?aae */
+/* Небольшое скругление постеров аниме/манги/персонажей/людей */
 .b-catalog_entry .image-cutter {
   border-radius: 6px;
 }
@@ -11305,12 +11305,12 @@ a {
 .p-profiles .about.block .b-spoiler label {
   border: none;
   display: inline-block !important;
-  font-weight: bold; /* oieueia o?eooa, ii?ii oa?aou, anee ia io?ii */
-  color: #ffffff; /* oaao oaenoa niieea?a */
-  background: #4e4c56; /* oaao oiia niieea?a */
+  font-weight: bold; /* толщина шрифта, можно убрать, если не нужно */
+  color: #ffffff; /* цвет текста спойлера */
+  background: #4e4c56; /* цвет фона спойлера */
   height: 30px; 
   width: 100%;
-  font-size: 12pt; /* ?acia? o?eooa oaenoa ia niieea?a */
+  font-size: 12pt; /* размер шрифта текста на спойлере */
   padding-top: 3px; 
   text-align: center;
   margin-bottom: 5px;
@@ -11410,8 +11410,8 @@ body {
 
 
 
-/* Ne?ieeaa? */
-/* Eiiiee ne?ieeaa?a */
+/* Скроллбар */
+/* Кнопки скроллбара */
 ::-webkit-scrollbar-button {
   background-image: url(''); 
   background-repeat: no-repeat;
@@ -11419,29 +11419,29 @@ body {
   height: 0px
 }
 
-/* Na?ay iieini?ea ia oiia ne?ieea */
+/* Серая полосочка на фоне скролла */
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.1)
 }
 
-/* Oaao ne?ieea */
+/* Цвет скролла */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   background-color: #670e6a;
 }
 
-/* Oaao ca?aoiai ne?ieea */
+/* Цвет зажатого скролла */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #933e94;
   -webkit-border-radius: 5px;
 }
 
-/* Aecoaeuiue ?acia? oaea oaie */
+/* Визуальный размер угла угол */
 ::-webkit-scrollbar-corner {
   background-repeat: no-repeat;
 }
 
-/* Oaieee eciaiaiey ?acia?a */
+/* Уголки изменения размера */
 ::-webkit-resizer {
   background-image: url('');
   background-repeat: no-repeat;
@@ -11449,10 +11449,10 @@ body {
   height: 6px;
 }
 
-/* ?acia?u ai?eciioaeuiue e aa?oeeaeuiue ne?iee */
+/* Размеры горизонтальный и вертикальный скролл */
 ::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
+  width: 7px;
+  height: 7px;
 }
 
 
@@ -11583,32 +11583,32 @@ display: none;
 
 
 
-/* Oa?aou neiaee aie?oa oeo? */
+/* Убрать скобки вокруг цифр */
 .b-stats_bar .stat_names .stat_name .size::before,
 .b-stats_bar .stat_names .stat_name .size::after {
   display: none;
 }
 
-/* Iaaaaaiea ia eiiieo */
+/* Наведение на кнопку */
 .p-profiles-show .b-stats_bar.manga a.title:hover  {
   background: #25d923;
 }
-/* Iaaaaaiea ia eiiieo */
+/* Наведение на кнопку */
 .p-profiles-show .b-stats_bar.anime a.title:hover  {
   background: #933e94;
 }
 .b-list_switchers > .switcher.selected, .editor-controls > span.selected, .p-profiles-show .b-stats_bar.manga a.title {
     color: #fff !important;
 }
-/* Noeeu eiiiie iaiae */
+/* Стиль кнопок манги */
 .p-profiles-show .b-stats_bar.manga a.title {
 background: #319832;
-  font-size:100%;
+  font-size: 100%;
 }
-/* Noeeu eiiiie aieia */
+/* Стиль кнопок аниме */
 .p-profiles-show .b-stats_bar.anime a.title {
   background: #670e6a;
-    font-size:100%;
+    font-size: 100%;
 }
 
 
@@ -11620,6 +11620,7 @@ body:first-letter {
   color: #fff;
   background-color: #670e6a;
 }
-body {
-zoom: 0.95;
+:hover {
+ text-decoration: none !important; 
 }
+.profile img { border-radius: 50%; }
