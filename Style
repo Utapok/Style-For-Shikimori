@@ -11292,7 +11292,7 @@ body {
 .headline>a, .midheadline>a, .subheadline>a {
 }
 a {
-    transition: 0.2s ease;
+    transition: 0.08s ease;
 }
 
 
