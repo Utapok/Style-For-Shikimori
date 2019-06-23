@@ -11617,7 +11617,7 @@ body:first-letter {
   text-transform: uppercase;
 }
 ::selection {
-  color: #fff;
+  color: #32d40;
   background-color: #670e6a;
 }
 :hover {
