@@ -11651,3 +11651,137 @@ border-radius: 50%;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .2);
 }
+
+
+
+/* Ссылки 2 */
+.p-profiles-show .b-link[href*='https://github.com/Utapok/Style-For-Shikimori/edit/master/Style#L11351'] {
+  position: fixed;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 0px; /* Отступ сверху */
+  width: 140px; /* Ширина */
+  height: 50px; /* Высота */
+  right: -120px; /* Прячет кнопку (должно торчать 60px (180 - 60 = -120) */
+  text-align: right; /* "лепит" текст на правый бок */
+  padding: .9rem 1.2rem; 
+  background: url(ПРЯМАЯ_ССЫЛКА_НА_КАРТИНКУ.png) no-repeat 14px center / 16%;
+/* Картинка (Стима/ВК/Телеграма) / XX px - отступ слева / XX % - величина картинки */
+  background-color: transparent; /* Цвет фона кнопки */
+  border: transparent; /* Толщина и цвет рамки */
+  border-width: 1px 0 1px 1px;
+  border-radius: 5px 0 0 5px; /* Скругление углов */
+  z-index: 20;
+  transition: 0s ease;
+  cursor: default;
+}
+
+.p-profiles-show .b-link[href*='https://github.com/Utapok/Style-For-Shikimori/edit/master/Style#L11351']:hover {
+  right: 0;
+  border-color: #26d971;
+  text-decoration: none;
+}
+/* Ссылки 2 */
+.p-profiles-show .b-link[href*='https://webref.ru/css'] {
+  position: fixed;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 660px; /* Отступ сверху */
+  width: 140px; /* Ширина */
+  height: 50px; /* Высота */
+  right: -120px; /* Прячет кнопку (должно торчать 60px (180 - 60 = -120) */
+  text-align: right; /* "лепит" текст на правый бок */
+  padding: .9rem 1.2rem; 
+  background: url(ПРЯМАЯ_ССЫЛКА_НА_КАРТИНКУ.png) no-repeat 14px center / 16%;
+/* Картинка (Стима/ВК/Телеграма) / XX px - отступ слева / XX % - величина картинки */
+  background-color: transparent; /* Цвет фона кнопки */
+  border: transparent; /* Толщина и цвет рамки */
+  border-width: 1px 0 1px 1px;
+  border-radius: 5px 0 0 5px; /* Скругление углов */
+  z-index: 20;
+  transition: 0s ease;
+    cursor: default;
+}
+
+.p-profiles-show .b-link[href*='https://webref.ru/css']:hover {
+  right: 0;
+  border-color: #26d971;
+  text-decoration: none;
+}
+
+
+
+.значки{
+на-левой: стороне;
+}
+.l-top_menu-v2 .menu-icon.mail:before,
+.l-top_menu-v2 .global-search .search-marker:before,
+.l-top_menu-v2 .icon-profile:before,
+.l-top_menu-v2 .icon-anime_list:before,
+.l-top_menu-v2 .icon-manga_list:before,
+.l-top_menu-v2 .icon-mail:before,
+.l-top_menu-v2 .icon-achievements:before,
+.l-top_menu-v2 .icon-settings:before,
+.l-top_menu-v2 .icon-site_rules:before,
+.l-top_menu-v2 .icon-faq:before,
+.l-top_menu-v2 .icon-sign_out:before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.l-top_menu-v2 .global-search .search-marker:before {
+  content: 'search';
+}
+
+.l-top_menu-v2 .menu-icon.mail:before {
+  content: 'notifications';
+}
+
+.l-top_menu-v2 .icon-profile:before {
+  content: 'account_circle';
+}
+
+.l-top_menu-v2 .icon-anime_list:before {
+  content: 'video_library';
+  background: none;
+}
+
+.l-top_menu-v2 .icon-manga_list:before {
+  content: 'library_books';
+  background: none;
+}
+
+.l-top_menu-v2 .icon-mail:before {
+  content: 'mail';
+}
+
+.l-top_menu-v2 .icon-achievements:before {
+  content: 'stars';
+}
+
+.l-top_menu-v2 .icon-settings:before {
+  content: 'settings';
+}
+
+.l-top_menu-v2 .icon-site_rules:before {
+  content: 'error';
+}
+
+.l-top_menu-v2 .icon-faq:before {
+  content: 'help';
+}
+
+.l-top_menu-v2 .icon-sign_out:before {
+  content: 'power_settings_new';
+}
