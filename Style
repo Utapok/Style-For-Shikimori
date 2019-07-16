@@ -11628,7 +11628,7 @@ border-radius: 50%;
 }
 @media screen and (max-width: 1024px)
 .l-top_menu-v2.is-search-mobile .global-search {
-    background: #670e6a;
+    background: #78067b;
 }
 
 
