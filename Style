@@ -11652,7 +11652,18 @@ border-radius: 50%;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .2);
 }
+.l-top_menu-v2 .global-search {
+  margin-right: 4%;
+}
 
+.l-top_menu-v2 .global-search,
+.l-top_menu-v2 .global-search input {
+  width: 100%;
+}
+
+.l-top_menu-v2:not(.is-search-focus) .global-search input::placeholder {
+  visibility: hidden;
+}
 
 
 /* Ссылки 2 */
